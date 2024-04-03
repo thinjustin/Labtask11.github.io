@@ -1,0 +1,97 @@
+body{
+    font-family: sans-serif;
+    background-color: #D04737;
+    }
+    .head{
+        color: white;
+        font-size:xx-large;
+    }
+    .main{
+        background-color: white;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        grid-template-rows: 40% 30% 30%;
+        grid-template-areas:
+        "same  same same side"
+        "ns ns ns side"
+        "sideb sideb sideb sideb";
+        
+    }
+    .same{
+        
+        grid-area: same;
+        padding: 5px;
+    }
+    .nostyle{
+        grid-area: ns;
+        padding: 5px;
+    }
+    .sidebar{
+        grid-area: side;
+        padding: 5px;
+    }
+    .sideb{
+        grid-area: sideb;
+        background-color: #F6DAD7;
+        color: #D04737;
+        padding: 5px;
+    }
+    
+    #st1, #st3, #st4, #st0{
+        background-color: #D04737;
+        text-decoration: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 15px;
+        width: 80%;
+        text-align: center;
+        border: 1px solid black;
+        margin: 10px;
+        color: white;
+    }
+    #st1:hover, #st3:hover, #st4:hover, #st0:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        color: #D04737;
+    }
+    #lastp{
+        text-align: center;
+        color: white;
+    }
+    #st2:hover{
+        background-color: #D04737;
+        color: white;
+    }
+    #st2{
+        background-color: white;
+        text-decoration: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 15px;
+        width: 80%;
+        text-align: center;
+        border: 1px solid black;
+        margin: 10px;
+        color: #D04737;
+    }
+    .link{
+        text-decoration: none;
+        color:#D04737;
+    }
+    .nostyle a{
+        text-decoration: none;
+        color: #D04737;
+    }
+    .nostyle h2{
+        color: #D04737;
+    }
+    .sameH1{
+        color: #D04737;
+    }

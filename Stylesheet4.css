@@ -1,0 +1,53 @@
+body{
+    font-family: sans-serif;
+    background-color: black;
+    }
+    #headH1{
+        color: rgb(82,150,97);
+    }
+    #headP{
+        color:rgb(82,150,97) ;
+    }
+    .blk{
+        color: rgb(82,150,97);
+    }
+    #st1:hover, #st2:hover, #st3:hover, #st4:hover, #st0:hover{
+        color: white;
+        transition: 0.5s;
+        
+    }
+    .sameP{
+        color: rgb(82,150,97);
+    }
+    .sameH1{
+        color: rgb(82,150,97);
+    }
+    .link{
+        color: white;
+    }
+    #NS{
+        color: rgb(82,150,97);
+    }
+    #NSP{
+        color: rgb(82,150,97);
+    }
+    #NSlink{
+        color: white;
+    }
+    .sidebH3{
+        color: white;
+    }
+    .sideb{
+        position: fixed;
+        top: 20px; 
+        right: 20px;
+        border: 1px solid white;
+        width: 500px;
+        color: white;
+    }
+    #lastp {
+        max-width: 600px;
+        color: white;
+        border: 1px solid white;
+    }
+   

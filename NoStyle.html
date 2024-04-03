@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No style</title>
+    <link id="theme" rel="stylesheet" type="text/css" href="ns.css" />
+</head>
+<body>
+    <a href="./index.html"></a>
+<div class="whole">
+    <header class="head">
+        <h1 id="headH1">Welcome to My Homepage</h1>
+        <p id="headP">Use the menu to select different Stylesheet</p>
+    </header>
+
+    <main class="main">
+        <side>
+            <ul class="sidebar">
+                <div class="stylesheets-group">
+                    <li id="st1" class="blk" onclick="toggleTheme('Stylesheet1.css')">Stylesheet 1</li>
+                    <li id="st2" class="blk" onclick="toggleTheme('Stylesheet2.css')">Stylesheet 2</li>
+                    <li id="st3" class="blk" onclick="toggleTheme('Stylesheet3.css')">Stylesheet 3</li>
+                </div>
+                <div class="stylesheets-group">
+                    <li id="st4" class="blk" onclick="toggleTheme('Stylesheet4.css')">Stylesheet 4</li>
+                    <li id="st0" class="blk" onclick="toggleTheme('ns.css')">No Stylesheet</li>
+                </div>
+            </ul>
+        </side>
+
+        <div class="same">
+            <h1 class="sameH1">Same Page Different Stylesheets</h1>
+            <p class="sameP">This is a demonstration of how different stylesheet can change the layout of your HTML page.
+                you can change the layout of this page by selecting different stylesheet in the menu, or by selecting
+                one of the following link.
+            </p>
+           
+            <a href="#" class="link" onclick="toggleTheme('stylesheet1.css')">Stylesheet 1</a>,
+            <a href="#" class="link" onclick="toggleTheme('stylesheet2.css')">Stylesheet 2</a>,
+            <a href="#" class="link" onclick="toggleTheme('stylesheet3.css')">Stylesheet 3</a>,
+            <a href="#" class="link" onclick="toggleTheme('stylesheet4.css')">Stylesheet 4</a>
+        </div>
+
+        <div class="nostyle">
+            <h2 id="NS">No Styles</h2>
+            <p id="NSP"> This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
+            <a href="#" class="link" onclick="toggleTheme('ns.css')">No Stylesheet</a>
+        </div>
+
+        <div class="sideb">
+            <h3 class="sidebH3">Side-bar</h3>
+            <p class="sidebp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+    </main>
+
+    <p id="lastp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+
+    <script>
+        function toggleTheme(value) {
+            var sheets = document.getElementsByTagName('link');
+            sheets[0].href = value;
+        }
+    </script>
+</div>
+</body>
+</html>
